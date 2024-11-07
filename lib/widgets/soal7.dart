@@ -26,6 +26,7 @@ class Soal7 extends StatelessWidget {
         body: Row(
           children: [
             Container(
+              // margin: const EdgeInsets.only(right: 20),
               width: 100,
               height: 100,
               color: Colors.blue,
@@ -35,6 +36,7 @@ class Soal7 extends StatelessWidget {
             ),
             const SizedBox(width: 20),
             Container(
+              // margin: const EdgeInsets.only(left: 20),
               width: 100,
               height: 100,
               color: Colors.amber,
