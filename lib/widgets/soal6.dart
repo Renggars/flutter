@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Soal2 extends StatelessWidget {
-  const Soal2({
+class Soal6 extends StatelessWidget {
+  const Soal6({
     super.key,
   });
 

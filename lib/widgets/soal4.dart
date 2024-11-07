@@ -2,8 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-class Soal2 extends StatelessWidget {
-  const Soal2({
+class Soal4 extends StatelessWidget {
+  const Soal4({
     super.key,
   });
 
