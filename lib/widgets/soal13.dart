@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Soal12 extends StatelessWidget {
-  const Soal12({
+class Soal13 extends StatelessWidget {
+  const Soal13({
     super.key,
   });
 
@@ -24,6 +24,7 @@ class Soal12 extends StatelessWidget {
           ],
         ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(
               children: [
