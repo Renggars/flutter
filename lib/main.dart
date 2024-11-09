@@ -14,8 +14,8 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_application_1/widgets/soal13.dart';
 // import 'package:flutter_application_1/widgets/soal14.dart';
 // import 'package:flutter_application_1/widgets/soal15.dart';
-import 'package:flutter_application_1/widgets/soal16.dart';
-// import 'package:flutter_application_1/widgets/soal17.dart';
+// import 'package:flutter_application_1/widgets/soal16.dart';
+import 'package:flutter_application_1/widgets/soal17.dart';
 // import 'package:flutter_application_1/widgets/soal18.dart';
 // import 'package:flutter_application_1/widgets/soal19.dart';
 // import 'package:flutter_application_1/widgets/soal20.dart';
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Soal16(),
+      home: Soal17(),
     );
   }
 }
