@@ -22,47 +22,77 @@ class Soal25 extends StatelessWidget {
               icon: const Icon(Icons.more_vert)),
         ],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Stack(
-              alignment: Alignment.center,
-              children: [
-                ClipOval(
-                  child: Container(
-                    width: 260,
-                    height: 260,
-                    color: Colors.blue,
-                  ),
-                ),
-                Container(
-                  width: 250,
-                  height: 250,
-                  decoration: BoxDecoration(
-                    border: Border.all(color: Colors.white, width: 5),
-                    color: Colors.grey[300],
-                    borderRadius: BorderRadius.circular(250 / 2),
-                    image: const DecorationImage(
-                        image: NetworkImage(
-                            "https://picsum.photos/id/870/200/300"),
-                        fit: BoxFit.cover),
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 40),
-            const Text(
-              "Hello World",
-              style: TextStyle(
-                fontSize: 35,
-                fontWeight: FontWeight.bold,
-                fontStyle: FontStyle.italic,
-                decoration: TextDecoration.underline,
-              ),
-            ),
-          ],
-        ),
+      body: Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.only(top: 20, left: 20, bottom: 20),
+            height: 140,
+            child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 50,
+                itemBuilder: (context, index) {
+                  if (index % 2 == 0) {
+                    return Container(
+                      width: 100,
+                      height: 120,
+                      color: Colors.blue,
+                      margin: const EdgeInsets.only(right: 20),
+                    );
+                  } else {
+                    return Container(
+                      width: 100,
+                      height: 120,
+                      color: Colors.amber,
+                      margin: const EdgeInsets.only(right: 20),
+                    );
+                  }
+                }),
+          ),
+          Expanded(
+            child: ListView.builder(
+                padding: const EdgeInsets.all(20),
+                itemCount: 50,
+                itemBuilder: (context, index) {
+                  if (index % 2 == 0) {
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            margin: const EdgeInsets.only(bottom: 10),
+                            height: 100,
+                            color: Colors.blue,
+                            child: const Center(
+                              child: Text("Hello"),
+                            ),
+                          ),
+                          const Text("hello")
+                        ],
+                      ),
+                    );
+                  } else {
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            margin: const EdgeInsets.only(bottom: 10),
+                            height: 100,
+                            color: Colors.amber,
+                            child: const Center(
+                              child: Text("Hello"),
+                            ),
+                          ),
+                          const Text("hello")
+                        ],
+                      ),
+                    );
+                  }
+                }),
+          ),
+        ],
       ),
     );
   }
